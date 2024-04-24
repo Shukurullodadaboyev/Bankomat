@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bsckground"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linerlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageYuzmingsom"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:src="@drawable/yuzmingsom"
+                app:layout_constraintBottom_toTopOf="@id/imageellikmingsom"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageellikmingsom"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:src="@drawable/ellikmingsom"
+                app:layout_constraintBottom_toTopOf="@id/imageOngmingsom"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageYuzmingsom" />
+
+            <ImageView
+                android:id="@+id/imageOngmingsom"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:src="@drawable/ongmingsom"
+                app:layout_constraintBottom_toTopOf="@id/imageBeshmingsom"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageellikmingsom" />
+
+            <ImageView
+                android:id="@+id/imageBeshmingsom"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:src="@drawable/beshmingsom"
+
+                app:layout_constraintBottom_toTopOf="@id/imagemingsom"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageOngmingsom" />
+
+            <ImageView
+                android:id="@+id/imagemingsom"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:src="@drawable/mingsom"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageBeshmingsom" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+
+                android:orientation="vertical"
+                android:text="0 ta"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imageYuzmingsom"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imageYuzmingsom"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:orientation="vertical"
+                android:text="0 ta"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imageellikmingsom"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imageellikmingsom"
+                app:layout_constraintTop_toTopOf="@id/imageellikmingsom" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:orientation="vertical"
+                android:text="0 ta"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imageOngmingsom"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imageOngmingsom"
+                app:layout_constraintTop_toTopOf="@id/imageOngmingsom" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:orientation="vertical"
+                android:text="0 ta"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imageBeshmingsom"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imageBeshmingsom"
+                app:layout_constraintTop_toTopOf="@id/imageBeshmingsom" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:orientation="vertical"
+                android:text="0 ta"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/imagemingsom"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imagemingsom"
+                app:layout_constraintTop_toTopOf="@id/imagemingsom" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linerlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="14dp"
+                android:background="@drawable/style1"
+                android:fontFamily="monospace"
+                android:hint="Miqdorni kiriting"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:backgroundTint="#5AFF61"
+                android:fontFamily="monospace"
+                android:text="Yechib olish"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/editText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
